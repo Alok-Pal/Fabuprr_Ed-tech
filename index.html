@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="images/logo.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fa-regular fa-circle-xmark"></i>
+                <li> <a class="active" href="index.html">Home</a></li>
+                <li> <a href="about.html">About</a></li>
+                <li> <a href="Categories.html">Categories</a></li>
+                <li> <a href="contactUs.html">Contact Us</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Home  -->
+    <section id="home">
+        <h2>Enhance Your Learning And Carrer With Fabuprr</h2>
+        <p>In today's world the use of technology in learning is immense, So here we are providing you a great E-learning platform with the incredinle courses and one on one support. You have to just belive in yourself and we will help in your in learning every aspects of the course.</p>
+        <div class="btn">
+            <a class="blue" href="#">Learn more</a>
+            <a class="yellow" href="#">Courses</a>
+
+        </div>
+    </section>
+     
+
+    <!-- Footer -->
+    <div class="footer">
+        <h3> All  Rights &#174;  reserved  to  FABUPRR  Ed-Tech   Copyright &#169; </h3>
+    </div>
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+</body>
+
+</html>
